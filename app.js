@@ -4,11 +4,11 @@ function buttonPressed(buttonPressedValue){
     var inputtedValue = userInputBoxElement.value;
     if(buttonPressedValue === '='){
         var result = eval(inputtedValue);
-        userInputBoxElement.value = result;
+        userInputBoxElement.value = userInputBoxElement.value + " = " + result;
         return ;
     }
-     if(buttonPressedValue === 'del'){
-        userInputBoxElement.value = inputValue.slice(0,inputtedValue.length-1 )
+     if(buttonPressedValue === 'd'){
+        userInputBoxElement.value = userInputBoxElement.value.slice(0,inputtedValue.length-1 )
         return;
     }
      if(buttonPressedValue === 'c'){
