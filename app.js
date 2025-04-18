@@ -2,11 +2,25 @@ var userInputBoxElement = document.getElementById('userInputBox');
 
 function buttonPressed(buttonPressedValue){
     var inputtedValue = userInputBoxElement.value;
-    if(buttonPressedValue === '='){
+    if(buttonPressedValue === '=' && userInputBoxElement.value.length>1){
         var result = eval(inputtedValue);
+        // if(result/1 = result){
+        //     userInputBoxElement.value = "";    
+        // }
         userInputBoxElement.value = userInputBoxElement.value + " = " + result;
         return ;
     }
+
+    if(buttonPressedValue === '=' && userInputBoxElement.value.length<1){
+        var result = eval(inputtedValue);
+        // if(result/1 = result){
+        //     userInputBoxElement.value = "";    
+        // }
+        userInputBoxElement.value = "";
+        return ;
+    }
+
+
      if(buttonPressedValue === 'd'){
         userInputBoxElement.value = userInputBoxElement.value.slice(0,inputtedValue.length-1 )
         return;
