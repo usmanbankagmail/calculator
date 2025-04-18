@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banka's Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <input id="userInputBox" placeholder="Click on Your Desired Buttons To Calculate" type="text" disabled>
+        
+        
+        <div id="row3">
+            <button id="seven" class="digit button" onclick="buttonPressed('7')">7</button>
+            <button id="eight" class="digit button" onclick="buttonPressed('8')">8</button>
+            <button id="nine" class="digit button" onclick="buttonPressed('9')">9</button>
+            <button id="divide" class="operator button" onclick="buttonPressed('/')">/</button>
+        </div>
+        
+        <div id="row2">
+            <button id="four" class="digit button" onclick="buttonPressed('4')">4</button>
+            <button id="five" class="digit button" onclick="buttonPressed('5')">5</button>
+            <button id="six" class="digit button" onclick="buttonPressed('6')">6</button>
+            <button id="multiply" class="operator button" onclick="buttonPressed('*')">x</button>
+        </div>
+        
+        <div id="row1">
+            <button id="one" class="digit button" onclick="buttonPressed('1')">1</button>
+            <button id="two" class="digit button" onclick="buttonPressed('2')">2</button>
+            <button id="three" class="digit button" onclick="buttonPressed('3')">3</button>
+            <button id="minus" class="operator button" onclick="buttonPressed('-')">-</button>
+        </div>
+        
+        <div id="row0">
+            <button id="zero" class="digit button" onclick="buttonPressed('0')">0</button>
+            <button id="dot" class="digit button" onclick="buttonPressed('.')">.</button>
+            <button id="equal" class="operator button" onclick="buttonPressed('=')">=</button>
+            <button id="plus" class="operator button" onclick="buttonPressed('+')">+</button>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
